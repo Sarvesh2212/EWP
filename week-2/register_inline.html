@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Salon Registration</title>
+</head>
+<body style="font-family:Arial;background:#f2f2f2;">
+
+<h2 style="text-align:center;color:white;background:black;padding:15px;">
+Royal Men's Salon Registration
+</h2>
+
+<form style="width:350px;margin:auto;background:white;padding:20px;border:1px solid gray;">
+
+<label>Full Name:</label><br>
+<input type="text" required minlength="3"
+style="width:100%;padding:8px;"><br><br>
+
+<label>Email:</label><br>
+<input type="email" required
+style="width:100%;padding:8px;"><br><br>
+
+<label>Mobile:</label><br>
+<input type="tel" pattern="[0-9]{10}" required
+style="width:100%;padding:8px;"><br><br>
+
+<label>Service:</label><br>
+<select required style="width:100%;padding:8px;">
+<option value="">Select</option>
+<option>Hair Cut</option>
+<option>Beard Trim</option>
+<option>Hair Spa</option>
+<option>Facial</option>
+</select><br><br>
+
+<input type="submit" value="Register"
+style="background:black;color:white;padding:8px 20px;">
+
+<input type="reset" value="Clear"
+style="padding:8px 20px;">
+
+</form>
+
+</body>
+</html>
