@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Men Salon Registration</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS -->
+    <style>
+        body{
+            font-family: Arial;
+            background-color:#f2f2f2;
+        }
+
+        form{
+            width:400px;
+            margin:auto;
+            background:white;
+            padding:20px;
+            border-radius:10px;
+        }
+
+        h2{
+            text-align:center;
+            color:darkblue;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2 style="color:darkred;">Men Salon Registration</h2>
+
+<form onsubmit="return validateForm()">
+
+    <label>Full Name</label><br>
+    <input type="text" id="name"><br><br>
+
+    <label>Email</label><br>
+    <input type="email" id="email"><br><br>
+
+    <label>Phone Number</label><br>
+    <input type="text" id="phone"><br><br>
+
+    <label>Age</label><br>
+    <input type="number" id="age"><br><br>
+
+    <label>Gender</label><br>
+    <input type="radio" name="gender" value="Male"> Male
+    <input type="radio" name="gender" value="Female"> Female
+    <br><br>
+
+    <label>Select Service</label><br>
+    <select id="service">
+        <option value="">Select</option>
+        <option>Hair Cut</option>
+        <option>Beard Trim</option>
+        <option>Hair Spa</option>
+        <option>Facial</option>
+    </select>
+    <br><br>
+
+    <label>Appointment Date</label><br>
+    <input type="date" id="date"><br><br>
+
+    <label>Password</label><br>
+    <input type="password" id="password"><br><br>
+
+    <label>Confirm Password</label><br>
+    <input type="password" id="confirmPassword"><br><br>
+
+    <input type="checkbox" id="terms">
+    I accept the Terms & Conditions
+    <br><br>
+
+    <input type="submit" value="Register">
+    <input type="reset" value="Reset">
+
+</form>
+
+<!-- External JavaScript -->
+<script src="script.js"></script>
+
+</body>
+</html>
