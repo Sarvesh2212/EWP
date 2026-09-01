@@ -1,0 +1,6 @@
+<!ELEMENT salon (service+)>
+<!ELEMENT service (name, description, price, duration)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT duration (#PCDATA)>
