@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE salon SYSTEM "services.dtd">
+
+<salon>
+
+    <service>
+        <name>Hair Cut</name>
+        <description>Stylish haircut by professional staff</description>
+        <price>200</price>
+        <duration>30 minutes</duration>
+    </service>
+
+    <service>
+        <name>Beard Trim</name>
+        <description>Professional beard trimming and styling</description>
+        <price>150</price>
+        <duration>20 minutes</duration>
+    </service>
+
+    <service>
+        <name>Hair Spa</name>
+        <description>Relaxing hair spa for healthy and smooth hair</description>
+        <price>500</price>
+        <duration>45 minutes</duration>
+    </service>
+
+    <service>
+        <name>Facial</name>
+        <description>Complete facial treatment for fresh skin</description>
+        <price>400</price>
+        <duration>40 minutes</duration>
+    </service>
+
+</salon>
