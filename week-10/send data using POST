@@ -1,0 +1,38 @@
+function sendData() {
+
+        let name = document.getElementById("name").value;
+        let email = document.getElementById("email").value;
+        let service = document.getElementById("service").value;
+
+        let data = {
+            name: name,
+            email: email,
+            service: service
+        };
+
+        fetch("https://jsonplaceholder.typicode.com/posts", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(data)
+        })
+
+            .then(response => response.json())
+
+            .then(result => {
+
+                document.getElementById("postResult").innerHTML =
+                    "<p>Booking Successful!</p>" +
+                    "<p>Response ID: " + result.id + "</p>";
+
+            })
+
+            .catch(error => {
+
+                document.getElementById("postResult").innerHTML =
+                    "<p>Error booking service</p>";
+
+            });
+
+    }
