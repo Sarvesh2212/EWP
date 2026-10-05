@@ -1,0 +1,52 @@
+ function loadXMLData() {
+
+        fetch("services.xml")
+
+            .then(response => response.text())
+
+            .then(data => {
+
+                let parser = new DOMParser();
+
+                let xml = parser.parseFromString(data, "text/xml");
+
+                let services = xml.getElementsByTagName("service");
+
+                let output = "";
+
+                for (let i = 0; i < services.length; i++) {
+
+                    let name =
+                        services[i].getElementsByTagName("name")[0].textContent;
+
+                    let description =
+                        services[i].getElementsByTagName("description")[0].textContent;
+
+                    let price =
+                        services[i].getElementsByTagName("price")[0].textContent;
+
+                    let duration =
+                        services[i].getElementsByTagName("duration")[0].textContent;
+
+                    output +=
+                        "<p>" +
+                        "<b>Service:</b> " + name + "<br>" +
+                        "<b>Description:</b> " + description + "<br>" +
+                        "<b>Price:</b> " + price + "<br>" +
+                        "<b>Duration:</b> " + duration +
+                        "</p>";
+
+                }
+
+                document.getElementById("xmlResult").innerHTML = output;
+
+            })
+
+            .catch(error => {
+
+                document.getElementById("xmlResult").innerHTML =
+                    "Error loading XML data";
+
+            });
+
+    }
