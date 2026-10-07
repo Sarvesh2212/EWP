@@ -1,0 +1,3 @@
+1)ng generate component booking
+2)ng generate service salon
+3)changes in html,css and ts
